@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul 20 21:13:50 2026
+# Process ID: 46916
+# Current directory: D:/loongarch_soc/nh3_soc_dma_touch_demo
+# Command line: vivado.exe -mode batch -source scripts\run_simulation.tcl
+# Log file: D:/loongarch_soc/nh3_soc_dma_touch_demo/vivado.log
+# Journal file: D:/loongarch_soc/nh3_soc_dma_touch_demo\vivado.jou
+#-----------------------------------------------------------
+CRITICAL WARNING: [Common 17-741] No write access right to the local Tcl store at 'C'. XilinxTclStore is reverted to the installation area. If you want to use local Tcl Store, please change the access right and relaunch Vivado.
+source {scripts\run_simulation.tcl}
+# set script_dir [file dirname [file normalize [info script]]]
+# set root_dir [file normalize [file join $script_dir ..]]
+# set project_file [file join $root_dir project nh3_soc_dma_touch_demo.xpr]
+# set_param general.maxThreads 16
+# open_project $project_file
+Scanning sources...
+Finished scanning sources
+# if {[get_property PART [current_project]] ne "xc7a200tfbg676-1"} {
+#     error "wrong FPGA part: [get_property PART [current_project]]"
+# }
+# set_property xsim.elaborate.debug_level off [get_filesets sim_1]
+# set_property xsim.simulate.log_all_signals false [get_filesets sim_1]
+# launch_simulation -simset sim_1 -mode behavioral
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_nh3_demo_soc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_nh3_demo_soc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AxiCrossbar_2x8
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyArbiter_3
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyArbiter_2
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyArbiter_1
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyArbiter
+INFO: [VRFC 10-311] analyzing module Axi4ReadOnlyArbiter
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyDecoder_1
+INFO: [VRFC 10-311] analyzing module Axi4ReadOnlyDecoder_1
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyDecoder
+INFO: [VRFC 10-311] analyzing module Axi4ReadOnlyDecoder
+INFO: [VRFC 10-311] analyzing module StreamFifoLowLatency_3
+INFO: [VRFC 10-311] analyzing module StreamArbiter_7
+INFO: [VRFC 10-311] analyzing module Axi4WriteOnlyErrorSlave_1
+INFO: [VRFC 10-311] analyzing module Axi4ReadOnlyErrorSlave_1
+INFO: [VRFC 10-311] analyzing module StreamFifo_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/Axi_CDC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Axi_CDC
+INFO: [VRFC 10-311] analyzing module StreamFifoCC_4
+INFO: [VRFC 10-311] analyzing module StreamFifoCC_3
+INFO: [VRFC 10-311] analyzing module StreamFifoCC_2
+INFO: [VRFC 10-311] analyzing module StreamFifoCC_1
+INFO: [VRFC 10-311] analyzing module StreamFifoCC
+INFO: [VRFC 10-311] analyzing module BufferCC_1
+INFO: [VRFC 10-311] analyzing module BufferCC
+INFO: [VRFC 10-311] analyzing module BufferCC_6
+INFO: [VRFC 10-311] analyzing module BufferCC_5
+INFO: [VRFC 10-311] analyzing module BufferCC_4
+INFO: [VRFC 10-311] analyzing module BufferCC_8
+INFO: [VRFC 10-311] analyzing module BufferCC_7
+INFO: [VRFC 10-311] analyzing module BufferCC_11
+INFO: [VRFC 10-311] analyzing module BufferCC_10
+INFO: [VRFC 10-311] analyzing module BufferCC_9
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/addr_trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/apb_mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_mux2
+INFO: [VRFC 10-311] analyzing module arb_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/axi2apb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2apb_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/axi2sram_sp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2sram_sp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/axi_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/axi_uart_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_controller
+INFO: [VRFC 10-2458] undeclared symbol nand_dma_ack_i, assumed default net type wire [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/axi_uart_controller.v:179]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/axi_wrap_ram_sp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_wrap_ram_sp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/btb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module btb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/cache_sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_bank_sram
+INFO: [VRFC 10-311] analyzing module tagv_sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/confreg/confreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module confreg
+INFO: [VRFC 10-311] analyzing module int_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/csr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/dcache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dcache
+INFO: [VRFC 10-311] analyzing module lfsr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/confreg/digitaltube_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module digitaltube_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/dma/dma_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/dma/dma_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dma_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/exe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/fpga_sram_sp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_sram_sp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/display/gt9147_touch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gt9147_touch
+INFO: [VRFC 10-311] analyzing module i2c_open_drain_engine
+INFO: [VRFC 10-311] analyzing module nh3_touch_demo_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/icache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module icache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/id_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/if_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/matmul/matmul_axi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matmul_axi_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/matmul/matmul_batch_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matmul_batch_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/mem_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/dma/memreq_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memreq_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module YDecoder
+INFO: [VRFC 10-311] analyzing module BoothBase
+INFO: [VRFC 10-311] analyzing module BoothInterBase
+INFO: [VRFC 10-311] analyzing module addr
+INFO: [VRFC 10-311] analyzing module WallaceTreeBase
+INFO: [VRFC 10-311] analyzing module mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/mycpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/nh3_demo_soc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nh3_demo_soc_top
+INFO: [VRFC 10-311] analyzing module nh3_demo_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/display/nh3_lcd_ui_renderer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nh3_lcd_ui_renderer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/display/nt35510_lcd_demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nt35510_lcd_demo
+INFO: [VRFC 10-311] analyzing module lcd8080_writer
+INFO: [VRFC 10-311] analyzing module nh3_lcd_ui_renderer_legacy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/perf_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module perf_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/raminfr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raminfr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/rst_sync/rst_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rst_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module soc_top
+INFO: [VRFC 10-2458] undeclared symbol cpu_sync_bid_4, assumed default net type wire [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1227]
+INFO: [VRFC 10-2458] undeclared symbol cpu_sync_rid_4, assumed default net type wire [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1232]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/stage3_pll/stage3_clk_pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stage3_clk_pll
+INFO: [VRFC 10-311] analyzing module stage3_clk_pll_clocking
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/tlb_entry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tlb_entry
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/tools.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_2_4
+INFO: [VRFC 10-311] analyzing module encoder_4_2
+INFO: [VRFC 10-311] analyzing module decoder_4_16
+INFO: [VRFC 10-311] analyzing module encoder_16_4
+INFO: [VRFC 10-311] analyzing module decoder_5_32
+INFO: [VRFC 10-311] analyzing module encoder_32_5
+INFO: [VRFC 10-311] analyzing module decoder_6_64
+INFO: [VRFC 10-311] analyzing module one_valid_n
+INFO: [VRFC 10-311] analyzing module one_valid_16
+INFO: [VRFC 10-311] analyzing module one_valid_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_rfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_sync_flops.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_sync_flops
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_tfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TOP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/APB_UART/URT/uart_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/open-la500/wb_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/nh3/nh3_axi_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nh3_axi_slave
+INFO: [VRFC 10-311] analyzing module nh3_input_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/nh3/nh3_cnn_lstm_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/nh3/nh3_cnn_lstm_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nh3_cnn_lstm_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/sim/tb_nh3_demo_soc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_nh3_demo_soc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 302.742 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim'
+"xelab -wto 60c99b5be6e4471bab9360b4065fa1d3 --incr --debug off --relax --mt 16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_nh3_demo_soc_behav xil_defaultlib.tb_nh3_demo_soc xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 60c99b5be6e4471bab9360b4065fa1d3 --incr --debug off --relax --mt 16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_nh3_demo_soc_behav xil_defaultlib.tb_nh3_demo_soc xil_defaultlib.glbl -log elaborate.log 
+Using 16 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'axiOut_3_awlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:919]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'axiOut_3_arlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:941]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'axi_arlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1287]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'axi_awlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1305]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 's_arlen' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/axi_wrap_ram_sp.v:188]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 's_awid' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/axi_wrap_ram_sp.v:196]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 's_awlen' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/axi_wrap_ram_sp.v:197]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 's_rid' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/ram_wrap/axi_wrap_ram_sp.v:214]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'axi_s_awlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1351]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'axi_s_arlock' [D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/soc_top.v:1374]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5. Module AxiCrossbar_2x8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5442. Module Axi4ReadOnlyDecoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6133. Module Axi4ReadOnlyErrorSlave_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4890. Module Axi4WriteOnlyDecoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6065. Module Axi4WriteOnlyErrorSlave_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4578. Module Axi4ReadOnlyDecoder_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6133. Module Axi4ReadOnlyErrorSlave_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4192. Module Axi4WriteOnlyDecoder_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6065. Module Axi4WriteOnlyErrorSlave_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4050. Module Axi4ReadOnlyArbiter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 3767. Module Axi4WriteOnlyArbiter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5916. Module StreamFifoLowLatency_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6205. Module StreamFifo_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4050. Module Axi4ReadOnlyArbiter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 3482. Module Axi4WriteOnlyArbiter_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5916. Module StreamFifoLowLatency_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6205. Module StreamFifo_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4050. Module Axi4ReadOnlyArbiter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 3197. Module Axi4WriteOnlyArbiter_2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5916. Module StreamFifoLowLatency_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6205. Module StreamFifo_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 4050. Module Axi4ReadOnlyArbiter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 2912. Module Axi4WriteOnlyArbiter_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5959. Module StreamArbiter_7 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 5916. Module StreamFifoLowLatency_3 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/loongarch_soc/nh3_soc_dma_touch_demo/rtl/ip/Bus_interconnects/AxiCrossbar_2x8.v" Line 6205. Module StreamFifo_3 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.nh3_cnn_lstm_pkg
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.i2c_open_drain_engine(CLOCK_DIVI...
+Compiling module xil_defaultlib.gt9147_touch(SIMULATION=1'b1,I2C...
+Compiling module xil_defaultlib.nh3_touch_demo_control
+Compiling module xil_defaultlib.rst_sync
+Compiling module xil_defaultlib.Axi4ReadOnlyErrorSlave_1
+Compiling module xil_defaultlib.Axi4ReadOnlyDecoder
+Compiling module xil_defaultlib.Axi4WriteOnlyErrorSlave_1
+Compiling module xil_defaultlib.Axi4WriteOnlyDecoder
+Compiling module xil_defaultlib.Axi4ReadOnlyDecoder_1
+Compiling module xil_defaultlib.Axi4WriteOnlyDecoder_1
+Compiling module xil_defaultlib.StreamArbiter_7
+Compiling module xil_defaultlib.Axi4ReadOnlyArbiter
+Compiling module xil_defaultlib.StreamFifo_3
+Compiling module xil_defaultlib.StreamFifoLowLatency_3
+Compiling module xil_defaultlib.Axi4WriteOnlyArbiter
+Compiling module xil_defaultlib.Axi4WriteOnlyArbiter_1
+Compiling module xil_defaultlib.Axi4WriteOnlyArbiter_2
+Compiling module xil_defaultlib.Axi4WriteOnlyArbiter_3
+Compiling module xil_defaultlib.AxiCrossbar_2x8
+Compiling module xil_defaultlib.if_stage
+Compiling module xil_defaultlib.decoder_6_64
+Compiling module xil_defaultlib.decoder_4_16
+Compiling module xil_defaultlib.decoder_2_4
+Compiling module xil_defaultlib.decoder_5_32
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_stage
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.exe_stage
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.YDecoder
+Compiling module xil_defaultlib.BoothBase
+Compiling module xil_defaultlib.BoothInterBase_default
+Compiling module xil_defaultlib.addr
+Compiling module xil_defaultlib.WallaceTreeBase
+Compiling module xil_defaultlib.mul_default
+Compiling module xil_defaultlib.mem_stage
+Compiling module xil_defaultlib.wb_stage
+Compiling module xil_defaultlib.csr
+Compiling module xil_defaultlib.axi_bridge
+Compiling module xil_defaultlib.encoder_4_2
+Compiling module xil_defaultlib.encoder_16_4
+Compiling module xil_defaultlib.encoder_32_5
+Compiling module xil_defaultlib.tlb_entry_default
+Compiling module xil_defaultlib.addr_trans
+Compiling module xil_defaultlib.one_valid_n(n=2)
+Compiling module xil_defaultlib.data_bank_sram_default
+Compiling module xil_defaultlib.tagv_sram_default
+Compiling module xil_defaultlib.lfsr
+Compiling module xil_defaultlib.icache_default
+Compiling module xil_defaultlib.dcache_default
+Compiling module xil_defaultlib.one_valid_32
+Compiling module xil_defaultlib.one_valid_16
+Compiling module xil_defaultlib.btb_default
+Compiling module xil_defaultlib.perf_counter
+Compiling module xil_defaultlib.core_top
+Compiling module xil_defaultlib.BufferCC_9
+Compiling module xil_defaultlib.BufferCC_10
+Compiling module xil_defaultlib.BufferCC_11
+Compiling module xil_defaultlib.StreamFifoCC
+Compiling module xil_defaultlib.BufferCC_7
+Compiling module xil_defaultlib.BufferCC_8
+Compiling module xil_defaultlib.StreamFifoCC_1
+Compiling module xil_defaultlib.BufferCC_4
+Compiling module xil_defaultlib.BufferCC_5
+Compiling module xil_defaultlib.BufferCC_6
+Compiling module xil_defaultlib.StreamFifoCC_2
+Compiling module xil_defaultlib.StreamFifoCC_3
+Compiling module xil_defaultlib.BufferCC
+Compiling module xil_defaultlib.BufferCC_1
+Compiling module xil_defaultlib.StreamFifoCC_4
+Compiling module xil_defaultlib.Axi_CDC
+Compiling module xil_defaultlib.axi2sram_sp_default
+Compiling module xil_defaultlib.fpga_sram_sp(AW=18,Init_File="D:...
+Compiling module xil_defaultlib.axi_wrap_ram_sp(Init_File="D:/lo...
+Compiling module xil_defaultlib.axi2apb_bridge
+Compiling module xil_defaultlib.arb_2_1
+Compiling module xil_defaultlib.apb_mux2
+Compiling module xil_defaultlib.raminfr
+Compiling module xil_defaultlib.uart_tfifo
+Compiling module xil_defaultlib.uart_transmitter
+Compiling module xil_defaultlib.uart_sync_flops(width=1,init_val...
+Compiling module xil_defaultlib.uart_rfifo(fifo_width=11)
+Compiling module xil_defaultlib.uart_receiver
+Compiling module xil_defaultlib.uart_regs
+Compiling module xil_defaultlib.UART_TOP
+Compiling module xil_defaultlib.axi_uart_controller
+Compiling module xil_defaultlib.memreq_axi
+Compiling module xil_defaultlib.dma_master
+Compiling module xil_defaultlib.dma_top
+Compiling module xil_defaultlib.nh3_input_buffer
+Compiling module xil_defaultlib.nh3_cnn_lstm_core(MEM_DIR="D:/lo...
+Compiling module xil_defaultlib.nh3_axi_slave(CORE_MEM_DIR="D:/l...
+Compiling module xil_defaultlib.matmul_batch_core
+Compiling module xil_defaultlib.matmul_axi_slave(AUTO_START_DMA=...
+Compiling module xil_defaultlib.digitaltube_controller
+Compiling module xil_defaultlib.int_reg
+Compiling module xil_defaultlib.confreg(SIMULATION=1'b1)
+Compiling module xil_defaultlib.soc_top(SIMULATION=1'b1,MEM_INIT...
+Compiling module xil_defaultlib.lcd8080_writer(HOLD_CYCLES=1)
+Compiling module xil_defaultlib.nh3_lcd_ui_renderer
+Compiling module xil_defaultlib.nt35510_lcd_demo(SIMULATION=1'b1...
+Compiling module xil_defaultlib.nh3_demo_soc_top(SIMULATION=1'b1...
+Compiling module xil_defaultlib.tb_nh3_demo_soc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_nh3_demo_soc_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim/xsim.dir/tb_nh3_demo_soc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 20 21:14:15 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 302.742 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/loongarch_soc/nh3_soc_dma_touch_demo/project/nh3_soc_dma_touch_demo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_nh3_demo_soc_behav -key {Behavioral:sim_1:Functional:tb_nh3_demo_soc} -tclbatch {tb_nh3_demo_soc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source tb_nh3_demo_soc.tcl
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_nh3_demo_soc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:25 . Memory (MB): peak = 302.742 ; gain = 0.000
+# run all
+UART: NH3_SOC_PREDICTION
+UART: BUILD=DMA_AXI_ZERO_DSP
+UART: NH3_ID=0x4e483301
+UART: TEST_WINDOWS=656
+UART: SOC_READY
+UART: GROUP=0
+UART: DMA_SOURCE=0x1c08213c
+UART: DMA_WORDS=3672
+UART: CORE_Q4_12=0x0526
+UART: PREDICTED_MILLI=8107
+UART: OBSERVED_MILLI=8824
+UART: BIAS_MILLI=-717
+UART: DIFFERENCE_MILLI=717
+UART: CORE_CYCLES=1258010
+UART: SOC_COMPUTE_OK
+UART: SOC_READY
+NH3_SOC_SIM_RESULT=PASS
+TOUCH_START_PATH=PASS
+LCD_INITIALIZED=1
+LCD_FRAME_COUNT=7
+LCD_SOC_COMPLETED_STATE=PASS
+BOARD_INDICATORS_OFF=PASS
+DMA_AXI_PATH=PASS
+DMA_READ_WORDS=3672
+DMA_WRITE_WORDS=3672
+DMA_SOURCE_RANGE=0x1c08213c..0x1c085a98
+DMA_DEST_RANGE=0x1f401000..0x1f40495c
+NH3_DMA_LOADED_WORDS=3672
+FPGA_PART=xc7a200tfbg676-1
+$finish called at time : 161320645 ns : File "D:/loongarch_soc/nh3_soc_dma_touch_demo/sim/tb_nh3_demo_soc.sv" Line 192
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:15:24 . Memory (MB): peak = 302.742 ; gain = 0.000
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 20 21:29:46 2026...
